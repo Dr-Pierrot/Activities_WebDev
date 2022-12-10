@@ -38,10 +38,10 @@
                         <a href="change-password.php" ><i class="fa-solid fa-gear"></i>  Change Password</a>
                     </li>
                     <li>
-                        <a href="investigaciones/favoritas"><i class="fa-solid fa-store"></i>Products</a>
+                        <a href="addproducts.php"><i class="fa-solid fa-store"></i>Products</a>
                     </li>
                     <li>
-                        <a href="sugerencias"><i class="fa-solid fa-right-from-bracket"></i>Log out</a>
+                        <a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i>Log out</a>
                     </li>
                 </ul>
             </div>

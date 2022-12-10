@@ -53,17 +53,30 @@
                 <!-- Page Heading -->
                 <div class="row" id="main" >
                     <div class="col-sm-12 col-md-12 well" id="content">
-                        <form method="post">
-                            <label for="extpassword">Exisitng Password:</label>
-                            <input type="text" name="extpassword" placeholder="Existing Password"><br>
-                            <label for="newpassword">New Password:</label>
-                            <input type="text" name="newpassword" placeholder="New Password"><br>
-                            <label for="confirmpassword">Confirm Password:</label>
-                            <input type="text" name="confirmpassword" placeholder="Confirm Password"><br>
-                            <input type="button" value="Save Changes">
-                        </form>
+                        <label for="productname">Product Name</label>
+                        <input type="text" name="productname" placeholder="Name"><br>
+                        <label for="productprice">Product Price</label>
+                        <input type="number" name="productprice" placeholder="Price"><br>
+                        <label for="productdescription">Product Description</label>
+                        <input type="text" style="width:500px; height:50px;" name="productdescription" placeholder="Description"><br>
+                        <label for="productphoto1">Photo 1</label>
+                        <input type="file" name="productphoto1" id="productphoto1"><br>
+                        <label for="productphoto2">Photo 2</label>
+                        <input type="file" name="productphoto2" id="productphoto2"><br>
+                        <button type="submit">Add Product</button>
                     </div>
-                    
+                    <div class="col-sm-12 col-md-12 well" id="content">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Photo1</th>
+                            <th>Photo2</th>
+                        </tr>
+                    </table>
+                    </div>
                 </div>
                 <!-- /.row -->
             </div>
