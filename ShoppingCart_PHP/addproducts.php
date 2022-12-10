@@ -214,11 +214,12 @@
                                             
                                         }
                                         mysqli_free_result($rsProducts);
-                                    }
-                                    else
-                                    echo '<tr >';
+                                    }else{
+                                        echo '<tr >';
                                         echo '<td colspan="8" class="text-center"> No products available! </td>';
-                                    echo '</tr>';
+                                        echo '</tr>';
+                                    }
+                                    
                                 }
                                 
 

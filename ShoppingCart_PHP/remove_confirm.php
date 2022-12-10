@@ -45,15 +45,15 @@
                             <div class="product-grid2 card">
                                 <div class="product-image2">
                                     <a href="">
-                                        <img class="pic-1" src="img/<?php echo $arrProducts[$_GET['delkey']]['img1']; ?>">
-                                        <img class="pic-2" src="img/<?php echo $arrProducts[$_GET['delkey']]['img2']; ?>">
+                                        <img class="pic-1" src="img/<?php echo $arrProducts[$_GET['delkey']]['photo1']; ?>">
+                                        <img class="pic-2" src="img/<?php echo $arrProducts[$_GET['delkey']]['photo2']; ?>">
                                     </a>                            
                                 </div>                        
                             </div>
                         </div>                
                         <div class="col-md-8 col-sm-6 mb-4">                
                             <h3 class="title">
-                                <?php echo $arrProducts[$_GET['delkey']]['item']; ?>
+                                <?php echo $arrProducts[$_GET['delkey']]['name']; ?>
                                 <span class="badge badge-dark">₱ <?php echo $arrProducts[$_GET['delkey']]['price']; ?></span>
                             </h3>
                             <p><?php echo $arrProducts[$_GET['delkey']]['description']; ?></p>                    
