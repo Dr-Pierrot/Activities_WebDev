@@ -19,7 +19,7 @@
     <body>
         <div class="container">
             <div class="row mt-3">
-                <div class="col-10">
+                <div class="col-8">
                     <h1><i class="fa-solid fa-gun"></i>ArmYourSelf</h1>
                 </div>
                 <div class="col-2 text-right">
@@ -30,7 +30,13 @@
                         </span>
                     </a>
                             
-                </div>            
+                </div>        
+                <div class="col-2 text-right">
+                    <a href="login-admin.php" class="btn btn-secondary">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </a>
+                            
+                </div>          
             </div>
             <hr> 
             <div class="row">
