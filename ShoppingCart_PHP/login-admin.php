@@ -48,7 +48,7 @@
             <input id="username" name="username" type="text" placeholder="User Name"><br>
             <input id="password" name="password" type="password" placeholder="Password"><br>
             <button id="btnLogin" name="btnLogin" type="submit">Login</button>
-            <a href="store.php" class="btn btn-dark col-12 border mt-1 rounded-pill">Cancel</a>
+            <a href="index.php" class="btn btn-dark col-12 border mt-1 rounded-pill">Cancel</a>
         </div>
         
     </form>

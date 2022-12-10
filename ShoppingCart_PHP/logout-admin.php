@@ -32,7 +32,7 @@
             <div class="row" id="main" >
                     <div class="col-sm-12 col-md-12 well" id="content">
                         <h1>Account Successfully Log out!</h1>
-                        <a href="store.php" class="btn btn-success">Continue</a>
+                        <a href="index.php" class="btn btn-success">Continue</a>
                     </div>
                 </div>
             <!-- /.container-fluid -->
