@@ -48,8 +48,8 @@
                                     <div class="product-grid2">
                                         <div class="product-image2">
                                             <a href="details.php?itemkey=<?php echo $key; ?>">
-                                                <img class="pic-1" src="img/<?php echo $product['img1']; ?>">
-                                                <img class="pic-2" src="img/<?php echo $product['img2']; ?>">
+                                                <img class="pic-1" src="img/<?php echo $product['photo1']; ?>">
+                                                <img class="pic-2" src="img/<?php echo $product['photo2']; ?>">
                                             </a>
                                             <a class="add-to-cart" href="details.php?itemkey=<?php echo $key; ?>">
                                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -58,7 +58,7 @@
                                         </div>
                                         <div class="product-content">
                                             <h3 class="title">
-                                                <?php echo $product['item']; ?>
+                                                <?php echo $product['name']; ?>
                                                 <span class="badge bg-dark">₱<?php echo $product['price']; ?></span>
                                             </h3>
                                             

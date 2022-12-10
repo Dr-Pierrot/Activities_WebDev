@@ -48,8 +48,8 @@
                                 <div class="col-md-4 col-sm-6">
                                     <div class="product-grid2">
                                         <div class="product-image2 h-100">
-                                            <img class="pic-1 h-100" src="img/<?php echo $arrProducts[$_GET['itemkey']]['img1']; ?>">
-                                            <img class="pic-2 h-100" src="img/<?php echo $arrProducts[$_GET['itemkey']]['img2']; ?>">
+                                            <img class="pic-1 h-100" src="img/<?php echo $arrProducts[$_GET['itemkey']]['photo1']; ?>">
+                                            <img class="pic-2 h-100" src="img/<?php echo $arrProducts[$_GET['itemkey']]['photo2']; ?>">
                                         </div>            
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                     <div class="col-12">
                                         <h1>
                                             <?php 
-                                                echo $arrProducts[$_GET['itemkey']]['item']; 
+                                                echo $arrProducts[$_GET['itemkey']]['name']; 
                                             ?>
                                             <span class="badge bg-dark">₱ <?php echo $arrProducts[$_GET['itemkey']]['price']; ?></span>
                                         </h1>

@@ -72,8 +72,8 @@
                                         <?php foreach($value as $color => $quantity): ?>
                                             <?php $_SESSION['totalAmount'] += $arrProducts[$key]['price'] * $quantity; ?>                                       
                                             <tr>                                        
-                                                <td><img src="img/<?php echo $arrProducts[$key]['img1']; ?>" class="img-thumbnail" style="height: 50px;"></td>
-                                                <td><?php echo $arrProducts[$key]['item']; ?></td>
+                                                <td><img src="img/<?php echo $arrProducts[$key]['photo1']; ?>" class="img-thumbnail" style="height: 50px;"></td>
+                                                <td><?php echo $arrProducts[$key]['name']; ?></td>
                                                 <td><?php echo $color; ?></td>
                                                 <td>
                                                     <input type="hidden" name="hdnKey[]" value="<?php echo $key; ?>">
