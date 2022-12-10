@@ -79,18 +79,29 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <!-- Page Heading -->
+                <?php
+                
+                    if(isset($_GET['k'])){
+                        $_SESSION['k'] = $_GET['k'];
+                    }            
+
+                    if(isset($_POST['btnDelete'])){
+                        require('opencon.php');
+                            $strsql = "DELETE from tbl_products WHERE id =" . $_SESSION['k'];
+                            if(mysqli_query($con,$strsql)){
+                                header("location:addproducts.php");
+                            }
+                        require('closecon.php');
+                    }
+
+                ?>
                 <div class="row" id="main" >
-                    <div class="col-sm-12 col-md-12 well" id="content">
-                        <h1>Welcome <?php echo $name; ?>!</h1>
-                    </div>
-                    <div class="col-sm-4 well">
-                        <div class="panel-body">
-                            <h1>Total Products Sold</h1>
-                            <button class="btn btn-primary" type="button">
-                                <?php echo (isset($_SESSION['totalQuantity']) ? $_SESSION['totalQuantity'] : "0"); ?>
-                            </button>
-                        </div>
-                    </div>
+                    <form method="post">
+                        <h1>Are sure you want to delete this product?</h1>
+                        <button type="submit" name="btnDelete">Delete</button>
+                        <a href="addproducts.php" class="btn btn-danger">Cancel</a>
+                    </form>
+                    
                 </div>
                 <!-- /.row -->
             </div>
