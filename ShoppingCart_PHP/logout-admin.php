@@ -25,47 +25,16 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">           
                 <li class="dropdown">
-                    <a href="#" class="" data-toggle="dropdown">Hello, Admin!</a>
+                    <a href="#" class="" data-toggle="dropdown">Bye, Admin!</a>
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li>
-                        <a href="dashboard.php" ><i class="fa-solid fa-chart-line"></i> Dashboard </a>
-                    </li>
-                    <li>
-                        <a href="change-password.php" ><i class="fa-solid fa-gear"></i>  Change Password</a>
-                    </li>
-                    <li>
-                        <a href="addproducts.php"><i class="fa-solid fa-store"></i>Products</a>
-                    </li>
-                    <li>
-                        <a href="logout-admin.php"><i class="fa-solid fa-right-from-bracket"></i>Log out</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </nav>
-
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <!-- Page Heading -->
-                <div class="row" id="main" >
+            <div class="row" id="main" >
                     <div class="col-sm-12 col-md-12 well" id="content">
-                        <h1>Welcome Admin!</h1>
-                    </div>
-                    <div class="col-sm-4 well">
-                        <div class="panel-body">
-                            <h1>Total Products Sold</h1>
-                            <button class="btn btn-primary" type="button">
-                                <span class="badge">4</span>
-                            </button>
-                        </div>
+                        <h1>Account Successfully Log out!</h1>
+                        <a href="store.php" class="btn btn-success">Continue</a>
                     </div>
                 </div>
-                <!-- /.row -->
-            </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->

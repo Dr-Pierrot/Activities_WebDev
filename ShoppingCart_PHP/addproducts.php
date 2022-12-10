@@ -41,7 +41,7 @@
                         <a href="addproducts.php"><i class="fa-solid fa-store"></i>Products</a>
                     </li>
                     <li>
-                        <a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i>Log out</a>
+                        <a href="logout-admin.php"><i class="fa-solid fa-right-from-bracket"></i>Log out</a>
                     </li>
                 </ul>
             </div>
