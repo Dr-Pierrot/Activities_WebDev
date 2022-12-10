@@ -1,3 +1,29 @@
+<?php
+    require_once('opencon.php');
+    $strsql = "SELECT * FROM tbl_user";
+
+    if($rsUser = mysqli_query($con,$strsql)){
+        if(mysqli_num_rows($rsUser)>0){
+            while($recUser = mysqli_fetch_array($rsUser)){
+                $password = $recUser['password'];
+                $name = $recUser['name'];
+            }
+            mysqli_free_result($rsUser);
+        }
+        else
+            echo 'No record found!';
+    }
+    else
+        echo 'ERROR: Could not execute your request!';
+
+    require_once('closecon.php');
+    
+        
+    
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +51,7 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">           
                 <li class="dropdown">
-                    <a href="#" class="" data-toggle="dropdown">Hello, Admin!</a>
+                    <a href="#" class="" data-toggle="dropdown">Hello, <?php echo $name; ?>!</a>
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -54,13 +80,36 @@
                 <div class="row" id="main" >
                     <div class="col-sm-12 col-md-12 well" id="content">
                         <form method="post">
+                            <?php
+                                if(isset($_POST['btnSave'])){
+                                    if($password == $_POST['extpassword']){
+                                        if($_POST['newpassword']== $_POST['confirmpassword']){
+                                            $newpassword = $_POST['newpassword'];
+                            
+                                            require('opencon.php');
+                                                $strsql = "UPDATE tbl_user SET password = '$newpassword' WHERE userid = 1";
+                                                if(mysqli_query($con,$strsql))
+                                                    header("location:login-admin.php");
+                                                else
+                                                    echo "Error!";
+                                            require_once('closecon.php');
+                                        }
+                                        else
+                                            echo "New/Confirm Password not match! <br><br>";
+                            
+                                    }
+                                    else
+                                        echo "existing password doesn't match! <br><br>";
+                                }
+                            
+                            ?>
                             <label for="extpassword">Exisitng Password:</label>
-                            <input type="text" name="extpassword" placeholder="Existing Password"><br>
+                            <input type="password" name="extpassword" placeholder="Existing Password" required><br>
                             <label for="newpassword">New Password:</label>
-                            <input type="text" name="newpassword" placeholder="New Password"><br>
+                            <input type="password" name="newpassword" placeholder="New Password" required><br>
                             <label for="confirmpassword">Confirm Password:</label>
-                            <input type="text" name="confirmpassword" placeholder="Confirm Password"><br>
-                            <input type="button" value="Save Changes">
+                            <input type="password" name="confirmpassword" placeholder="Confirm Password" required><br>
+                            <input type="submit" name="btnSave" value="Save Changes">
                         </form>
                     </div>
                     
